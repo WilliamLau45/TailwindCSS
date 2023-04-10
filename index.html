@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Exploration</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+
+      <!-- Flex container -->
+      <div class="flex items-center justify-between">
+
+        <!-- Logo -->
+        <div class="p-1 w-1/4">
+          <img src="images/Cube.png" alt="" />
+        </div>
+
+        <!-- Menu -->
+        <div class="hidden space-x-8 md:flex text-xl">
+          <a href="#" class="text-white hover:text-darkGrayBlue">What's New</a>
+          <a href="#" class="text-white hover:text-darkGrayBlue">Products</a>
+          <a href="#" class="text-white hover:text-darkGrayBlue">About Us</a>
+          <a href="#" class="text-white hover:text-darkGrayBlue">Community</a>
+          <a href="#" class="text-white hover:text-darkGrayBlue">Socials</a>
+        </div>
+
+        <!-- Menu Button -->
+        <a href="#" class="hidden p-3 px-8 pt-2 text-white bg-purple rounded-full baseline hover:bg-lightPurple md:block">
+          Get Started
+        </a>
+
+      </div>
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro">
+
+      <!-- Flex Container -->
+      <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 md:flex-row">
+
+        <!-- Left side -->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+
+          <h1 class="max-w-md text-4xl font-bold text-lightBlue text-center md:text-5xl md:text-left">
+            Get your very own space cube today!
+          </h1>
+
+          <p class="max-w-sm text-center text-white md:text-left">
+            Ever wonder what a space cube looks like? Get one and see for yourself!
+          </p>
+          
+          <div class="flex justify-center md:justify-start">
+            <a href="#" class="hidden p-3 px-8 pt-2 text-white bg-purple rounded-full baseline hover:bg-lightPurple md:block">
+              Get Started
+            </a>
+          </div>
+        </div>
+
+        <!-- Images -->
+        <div class="w-80 h-80 aspect-square border-2">
+          <img class="w-full h-full object-cover" src="images/GlassCube.jpg" alt="" />
+        </div>
+        <div class="w-80 h-80 aspect-square border-2">
+          <img class="w-full h-full object-cover" src="images/BallCube.jpg" alt="" />
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Border Line -->
+    <div class="border-b border-lightPurple border-dotted border-b-2 w-full mx-auto p-3 mb-4">
+    </div>
+
+    <!-- Wow Section -->
+    <section id="features">
+
+      <!-- Flex Container-->
+      <div class="flex justify-center items-center h-screen">
+
+       <!-- Cool image -->
+       <div class="relative border-2 w-2/3 border-2">
+        <img src="images/Galaxy.jpg" alt="My image" class="w-full">
+        <div class="absolute inset-0 bg-gray-800 opacity-0 hover:opacity-50 transition-opacity duration-500"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-white opacity-0 hover:opacity-100 transition-opacity duration-500">
+          <h1 class="text-4xl font-bold">Experience the Galaxy</h1>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews">
+
+      <!-- Review header Container -->
+      <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+
+        <!-- Heading -->
+        <h2 class="text-4xl font-bold text-center text-white">
+          Reviews from Customers
+        </h2>
+
+        <!-- Review Container -->
+        <div class="flex flex-col mt-24 md:flex-row md:space-x-6 mb-10">
+          
+          <!-- Review 1 -->
+          <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryDarkBlue md:w-1/3">
+
+            <h5 class="text-lg font-bold text-brightYellow">9 / 10</h5>
+            <h5 class="text-lg font-bold text-white">Jasmine Patel</h5>
+            <p class="text-sm text-white">
+              "The Space Cube has been a game-changer for my sleep. 
+              Its calming design helps me relax and unwind, 
+              making it an essential part of my bedtime routine."
+            </p>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="flex hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryDarkBlue md:flex md:w-1/3">
+
+            <h5 class="text-lg font-bold text-brightYellow">10 / 10</h5>
+            <h5 class="text-lg font-bold text-white">Lucas Chen</h5>
+            <p class="text-sm text-white">
+              "I bought the Space Cube as a gift for a friend, 
+              and she absolutely loved it. It's such a unique and thoughtful present, 
+              and it's sure to impress anyone who sees it. I highly recommend this product!"
+            </p>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="flex hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryDarkBlue md:flex md:w-1/3">
+
+            <h5 class="text-lg font-bold text-brightYellow">9 / 10</h5>
+            <h5 class="text-lg font-bold text-white">Daniel Kim</h5>
+            <p class="text-sm text-white">
+              "Thanks to the Space Cube, I've finally filled that void in my life. 
+              It's like a tiny alien companion that sits quietly on my shelf and judges all my life decisions. 
+              Who needs a boring old vase when you can have a cube that could have been beamed down from a UFO?"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue">
+
+      <!-- Flex Container -->
+      <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+
+        <!-- Logo container -->
+        <div class="flex items-center justify-between space-y-12">
+
+          <!-- Mobile Version -->
+          <div class="mx-auto my-6 text-center text-white md:hidden">
+            Copyright &copy; 2023, All Rights Reserved
+          </div>
+
+          <!-- Logo -->
+          <div class="p-1 w-1/3">
+            <img src="images/Cube.png" alt="" />
+          </div>
+ 
+        </div>
+
+        <!-- List Container -->
+        <div class="flex justify-around space-x-20">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-darkGrayBlue">Home</a>
+            <a href="#" class="hover:text-darkGrayBlue">What's New</a>
+            <a href="#" class="hover:text-darkGrayBlue">Products</a>
+            <a href="#" class="hover:text-darkGrayBlue">About Us</a>
+          </div>
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-darkGrayBlue">Socials</a>
+            <a href="#" class="hover:text-darkGrayBlue">Community</a>
+            <a href="#" class="hover:text-darkGrayBlue">Privacy Policy</a>
+          </div>
+        </div>
+
+        <!-- Input Container -->
+        <div class="flex flex-col justify-between">
+          <form>
+            <div class="flex space-x-3">
+              <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="input"/>
+              
+              <!-- Footer Button -->
+              <a href="#" class="hidden p-3 px-8 pt-2 text-white bg-purple rounded-full baseline hover:bg-lightPurple md:block">
+                Get Started
+              </a>
+            </div>
+          </form>
+
+          <div class="hidden text-white md:block">
+            Copyright &copy; 2023, All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+</body>
+</html>

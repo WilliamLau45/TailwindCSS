@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+    background-image: url('../images/Stars.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+    background-position: 10% 15%;
+  }
+
+body {
+    background-image: url('../images/Night.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  @media (max-width: 576px) {
+    body {
+        background-size: 100% 100%;
+    }
+  }
